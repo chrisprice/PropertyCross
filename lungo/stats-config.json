@@ -1,0 +1,9 @@
+{
+  "common": [
+    "www/models/*.js",
+    "www/viewModels/*.js",
+    "www/css/*.css",
+    "www/application.js",
+    "www/index.html"
+  ]
+}

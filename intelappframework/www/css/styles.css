@@ -1,0 +1,93 @@
+/*Header button defaults*/
+#header a.button {
+    float: left;
+    margin:4px;
+}
+
+/*Fave button*/
+#header a#addRemoveFave {
+    float: right;
+    margin-right: 6px;
+}
+#header a#addRemoveFave.fave {
+    color: green;
+}
+
+/*Home page*/
+#recentSearchLabel, #locListLabel, #errorMessage  {
+    margin-top: 10px;
+    display: none; /* initially hidden */
+}
+#recentSearches li span.totalResults {
+    float: right;
+    margin-right: 35px;
+    margin-top: 14px;
+    font-size: 12px;
+    background: #CCC;
+    line-height: 12px;
+    padding: 4px;
+    color: inherit;
+    border-radius: 4px;
+}
+#recentSearches li span.recentSearchLocation {
+    width: calc(100% - 90px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#loadingSpinner {
+    float: right;
+    display: none;
+}
+#errorMessage {
+    color: red;
+}
+
+/*Results list*/
+#results a {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+}
+#results a img {
+    float: left;
+    margin-right: 5px
+}
+#results a:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Property details*/
+#property img{
+    width: 100%;
+}
+#property h3, #property div {
+    margin: 5px;
+}
+
+/* Custom win 8 colors */
+#afui.win8 #recentSearches li {
+    background:#00aba9;
+    margin-bottom: 10px;
+}
+
+#afui.win8 #results a {
+    background:#3f3f3f;
+    margin-bottom:10px;
+}
+
+#property .addRemoveFave {
+  display: none;
+}
+
+#afui.android #property .addRemoveFave {
+  display: block;
+  float: right;
+}
